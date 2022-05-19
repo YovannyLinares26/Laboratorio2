@@ -4,6 +4,6 @@ RUN apt-get -y  update
 
 RUN apt-get -y install apache2
 
-COPY ["index.html" , "/var/www/html"]
+COPY ["." , "/var/www/html"]
 
 CMD apachectl -D FOREGROUND
